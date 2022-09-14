@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .myDiv {
+            border: 50px outset grey;
+            background-color: green;
+            text-align: center;
+            color: red;
+            font-family: "Papyrus";
+            <!--text-shadow: 5px 10px 15px #000;-->
+        }
+    </style>
+</head>
+<body>
+<div class="myDiv">
+    <h1>HEJ DETTE ER EN BODY OG JEG SKRIVER KUN I CAPS</h1>
+    <p>DETTE ER EN PARAGRAF</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK ME</a>
+    <p>DETTE ER EN ANDEN PARAGRAF</p>
+    <a th:href="@{about}">ABOUT</a>
+    <p>HER ER EN TREDJE</p>
+    <a th:href="@{terminator}">TERMINATOR</a>
+</div>
+</body>
+</html>
